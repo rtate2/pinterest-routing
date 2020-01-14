@@ -23,11 +23,11 @@ render() {
 
   return (
     <div className="Board col-4 mb-3">
-      <div class="card">
-        <div class="card-body">
+      <div className="card">
+        <div className="card-body">
           <button className="btn btn-danger" onClick={this.deleteBoardEvent}>X</button>
-          <h5 class="card-title">{board.name}</h5>
-          <p class="card-text">{board.description}</p>
+          <h5 className="card-title">{board.name}</h5>
+          <p className="card-text">{board.description}</p>
           <Link className="btn btn-primary" to={`/board/${board.id}`}>View Board</Link>
         </div>
       </div>
